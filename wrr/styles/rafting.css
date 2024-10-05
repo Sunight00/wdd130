@@ -12,6 +12,7 @@
 }
 p{
   font-family: var(--normal-text-font);
+  font-size: 0.9rem;
 }
 
 /*body { min-height: 100vh; }*/
@@ -61,11 +62,12 @@ h2  {
 }
 
 .adventureimages img{
-  width: 150%;
+  width: 100%;
 
 }
 .sociallinks img{
-  width:2%
+  width:2%;
+  height: auto;
 }
 
 
@@ -74,4 +76,110 @@ h2  {
   font-family: var(--normal-text-font);
   font-size: 1.5rem;
   padding-left: 1rem;
+}
+
+
+
+
+
+/*flex and grind*/
+header{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  background-color: var(--primary-color);
+  padding: 15px;
+}
+
+.head_nav{
+  display: flex;
+}
+
+
+/*for history*/
+
+#history_section{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+.item1{
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+  font-size: 75px;
+}
+
+.item2{
+  grid-column: 1/2;
+  grid-row:2/3; 
+  padding: 2%;
+}
+
+.item3{
+  grid-column: 2/3;
+  grid-row:2/3; 
+  width: 90%;
+  height: auto;
+  text-align: center;
+
+}
+.item4{
+  grid-column: 3/4;
+  grid-row:2/3; 
+  padding: 2%;
+}
+
+
+
+/*for adventures*/
+.adventureimages {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 4%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+figcaption{
+  font-family: var(--normal-text-font);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.ad1{
+  grid-column: 1/6;
+  grid-row: 1/2;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.ad2{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.ad3{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.ad4{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.ad5{
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.ad6{
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+
+
+/*for footer*/
+.footer_text{
+  text-align: center;
 }
