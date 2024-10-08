@@ -10,6 +10,12 @@
   --accent1-colorn :  #f3c791b9;
   --accent2-color : #FFFFFF;
 }
+
+#logo {
+  max-width: 20%;
+  height:auto;
+}
+
 p{
   font-family: var(--normal-text-font);
   font-size: 0.9rem;
@@ -63,35 +69,30 @@ h2  {
 
 .adventureimages img{
   width: 100%;
-
-}
-.sociallinks img{
-  width:2%;
-  height: auto;
 }
 
 
 .head_nav a {
   text-decoration: none;
   font-family: var(--normal-text-font);
-  font-size: 1.5rem;
+  font-size: 4vw;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
-
-
 
 
 
 /*flex and grind*/
 header{
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 0.3fr 1fr;
   background-color: var(--primary-color);
   padding: 15px;
 }
 
 .head_nav{
   display: flex;
+
 }
 
 
@@ -100,13 +101,14 @@ header{
 #history_section{
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
+  margin-top: 2rem;
 }
 
 .item1{
   grid-column: 1/4;
   grid-row: 1/2;
   text-align: center;
-  font-size: 75px;
+  font-size: 4vw;
 }
 
 .item2{
@@ -121,8 +123,8 @@ header{
   width: 90%;
   height: auto;
   text-align: center;
-
 }
+
 .item4{
   grid-column: 3/4;
   grid-row:2/3; 
@@ -136,6 +138,7 @@ header{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 4%;
+  margin-top: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -150,7 +153,7 @@ figcaption{
   grid-column: 1/6;
   grid-row: 1/2;
   text-align: center;
-  font-size: 4rem;
+  font-size: 4vw;
 }
 
 .ad2{
@@ -180,6 +183,23 @@ figcaption{
 
 
 /*for footer*/
+footer{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .footer_text{
+  grid-column: 2/3;
+  text-align:center;
+}
+
+.sociallinks{
+  grid-column: 3/4;
   text-align: center;
+}
+
+.sociallinks img{
+  max-width:5%;
+  height: auto;
 }
