@@ -232,7 +232,6 @@ form{
   margin: 3rem 0;
   padding: 0.5rem;
   max-width: fit-content;
-  box-shadow: #1195ee;
   font-family: var(--normal-text-font);
   font-size:1vw ;
   background-color: var(--primary-color);
