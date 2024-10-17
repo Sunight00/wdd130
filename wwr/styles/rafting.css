@@ -204,8 +204,21 @@ footer{
 }
 
 
+
+/*Contact us*/
+#frame_box{
+  width: 40vw;
+  height:20vw;
+  margin: 2rem auto;
+
+}
+#iframe{
+  width: inherit;
+  height:inherit;
+}
+
 #emp{
-  margin-top: 1rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-around;
 }
@@ -213,4 +226,15 @@ footer{
 .em{
  width: 100%;
  height: auto;
+}
+
+form{
+  margin: 3rem 0;
+  padding: 0.5rem;
+  max-width: fit-content;
+  box-shadow: #1195ee;
+  font-family: var(--normal-text-font);
+  font-size:1vw ;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }
